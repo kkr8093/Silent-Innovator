@@ -20,6 +20,11 @@ navOpenBtn.addEventListener("click", () => {
 navCloseBtn.addEventListener("click", () => {
   nav.classList.remove("openNav");
 });
+// JavaScript code
+window.addEventListener("scroll", function() {
+  var nav = document.querySelector(".nav");
+  nav.classList.toggle("scrolled", window.scrollY > 0);
+});
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
