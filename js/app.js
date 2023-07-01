@@ -1,3 +1,11 @@
+const searchIcon = document.getElementById("searchIcon");
+const searchBox = document.querySelector(".search-box");
+
+searchIcon.addEventListener("click", () => {
+  document.body.classList.toggle("openSearch");
+  searchBox.classList.toggle("openSearch");
+});
+
 const nav = document.querySelector(".nav"),
   searchIcon = document.querySelector(".search-icon"), // Updated class name
   navOpenBtn = document.querySelector(".navOpenBtn"),
