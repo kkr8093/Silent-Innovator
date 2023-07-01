@@ -95,7 +95,7 @@ a {
 
 .subscribe-button:hover {
   background-color: red;
-	border-radius: 10px;
+	border-radius: 25px;
 }
 .nav .navOpenBtn,
 .nav .navCloseBtn {
