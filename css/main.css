@@ -4,24 +4,10 @@
 	box-sizing: border-box;
 }
 :root {
-	 --main-color: #179207 ;
 	--index: calc(1vw + 1vh);
 	--color-header: #f4efec;
 	--color-text: #cdc6c3;
 	--gallery-gap: calc(var(--index) * 7.5)
-}
-/* scroll bar */
-html::-webkit-scrollbar{
-    width: 0.5rem;
-    background: transparent;
-}
-html::-webkit-scrollbar-thumb{
-    border-radius: 5rem;
-    background: var(--main-color);
-}
-
-section{
-    padding: 4rem 0 0;
 }
 @font-face {
 	font-family: raleway-c;
@@ -45,85 +31,6 @@ body {
 	font-family: raleway-c;
 	overflow-x: hidden;
 }
-header{
-    width: 100%;
-    position: fixed;
-    display: block;
-    top: 0; left: 0;
-    z-index: 100;
-}
-header.shadow{
-    background: var(--bg-color);
-    box-shadow: 2px 4px 4px rgb(15 54 55 / 20%);
-    transition: .4s ease ;
-}
-header.shadow #search-icon{
-    color: var(--text-color);
-}
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 35px;
-}
-#menu-icon{
-    font-size: 25px;
-    color: var(--text-color);
-    cursor: pointer;
-    display: none;
-}
-.logo{
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--other-color);
-    font-family: 'Megrim', sans-serif;
-}
-.logo span{
-    color: var(--main-color);
-}
-.navbar{
-    display: flex;
-    column-gap: 1.5rem;
-}
-.navbar a{
-    color: var(--text-color);
-    font-size: .8rem;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.navbar a:hover,
-.navbar .active{
-    color: var(--main-color);
-    border-bottom: 2px solid var(--main-color);
-}
-#search-icon{
-    font-size: 20px;
-    cursor: pointer;
-    color: var(--other-color);
-}
-.search-box{
-    position: absolute;
-    top: 110%; right: 0; left: 0;
-    background: 4px 4px 15px rgba(5, 120, 24, 0.52);
-    box-shadow: 1px 1px 10px var(--main-color);
-    border: none;
-    border-radius: 10px;
-    clip-path: circle(0% at 10% 0%);
-}
-.search-box.active{
-    clip-path: circle(200% at 100% 0%);
-    transition: 1s;
-}
-.search-box input{
-    width: 100%;
-    padding: 20px;
-    border: none; outline: none;
-    background: transparent;
-    font-size: 1rem;
-    background: var(--bg-color);
-    border-radius: 10px;
-}
-
 .hero {
 	width: calc(var(--index) * 36);
 	position: absolute;
