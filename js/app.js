@@ -1,9 +1,17 @@
-const searchIcon = document.getElementById("searchIcon");
-const searchBox = document.querySelector(".search-box");
+const subscribeButton = document.querySelector(".subscribe-button");
 
-searchIcon.addEventListener("click", function() {
-  searchBox.classList.toggle("openSearch");
+subscribeButton.addEventListener("mouseover", function() {
+  this.style.backgroundColor = "red";
 });
+
+subscribeButton.addEventListener("mouseout", function() {
+  this.style.backgroundColor = "";
+});
+
+subscribeButton.addEventListener("click", function() {
+  window.open("https://www.youtube.com/channel/your-channel-id", "_blank");
+});
+
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
