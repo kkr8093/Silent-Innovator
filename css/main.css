@@ -81,13 +81,14 @@ a {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
-  pointer-events: auto;
+  position: relative;
   z-index: 2;
 }
 
 .nav .search-box {
   position: absolute;
-  right: 250px;
+  top: 100%;
+  right: 0;
   height: 45px;
   max-width: 555px;
   width: 100%;
@@ -96,15 +97,11 @@ a {
   transition: all 0.2s linear;
 }
 
-.nav .search-box .search-icon {
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+.nav.openSearch .search-box {
+  opacity: 1;
+  pointer-events: auto;
 }
+
 
 .nav .search-box input {
   height: 100%;
