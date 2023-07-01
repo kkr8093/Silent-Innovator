@@ -1,15 +1,11 @@
-const nav = document.querySelector(".nav");
-let prevScrollPos = window.pageYOffset;
+const searchIcon = document.getElementById("searchIcon");
+const searchBox = document.querySelector(".search-box");
 
-window.addEventListener("scroll", () => {
-  const currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
-    nav.style.top = "0";
-  } else {
-    nav.style.top = "-100px";
-  }
-  prevScrollPos = currentScrollPos;
+searchIcon.addEventListener("click", function() {
+  searchBox.classList.toggle("openSearch");
 });
+
+
 
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
@@ -63,16 +59,8 @@ if (ScrollTrigger.isTouch !== 1) {
 
 }
 // JavaScript code
-const nav = document.querySelector(".nav");
-let prevScrollPos = window.pageYOffset;
-
-window.addEventListener("scroll", () => {
-  const currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
-    nav.style.top = "0";
-  } else {
-    nav.style.top = "-100px";
-  }
-  prevScrollPos = currentScrollPos;
+window.addEventListener("scroll", function() {
+  const nav = document.querySelector(".nav");
+  nav.classList.toggle("scrolled", window.scrollY > 0);
 });
 
