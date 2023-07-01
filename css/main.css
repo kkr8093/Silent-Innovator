@@ -73,14 +73,14 @@ body {
   justify-content: space-between;
 }
 
-.nav a {
+.nav-links a {
   color: #fff;
   text-decoration: none;
 }
 
-.nav a:hover,
-.nav .active{
-    color: var(#BFFFFE);
+.nav-links a:hover,
+.nav-links .active{
+    color: #BFFFFE;
     border-bottom: 2px solid var(#BFFFFE);
 }
 
