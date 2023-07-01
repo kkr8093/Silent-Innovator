@@ -9,7 +9,7 @@ subscribeButton.addEventListener("mouseout", function() {
 });
 
 subscribeButton.addEventListener("click", function() {
-  window.open("https://www.youtube.com/channel/your-channel-id", "_blank");
+  window.open("https://www.youtube.com/channel/UCplgG6_T3yVLkBZWTEkzg0g", "_blank");
 });
 
 
