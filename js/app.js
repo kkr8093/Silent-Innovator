@@ -1,5 +1,5 @@
 const nav = document.querySelector(".nav"),
-  searchIcon = document.querySelector("#searchIcon"),
+  searchIcon = document.querySelector(".search-icon"), // Updated class name
   navOpenBtn = document.querySelector(".navOpenBtn"),
   navCloseBtn = document.querySelector(".navCloseBtn");
 
@@ -20,6 +20,7 @@ navOpenBtn.addEventListener("click", () => {
 navCloseBtn.addEventListener("click", () => {
   nav.classList.remove("openNav");
 });
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 if (ScrollTrigger.isTouch !== 1) {
