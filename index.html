@@ -4,102 +4,38 @@
 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Silent Innovator</title>
 
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/app.js" defer></script>
 <style>
 	.contaner{
 		border-radius: 25px;
 	}
-	.dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-        
-        .dropdown:hover .dropdown-content {
-          display: block;
-        }
-        
-        .dropdown-content a {
-          color: rgb(0, 0, 0);
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-        
-        .dropdown-content a:hover {
-          background-color: #c9fcd1;
-        }
-        
-        .dropdown:hover .dropdown-content {
-          display: block;
-}
-
-.horizontal-menu li:hover .dropdown {
-  display: block;
-}
 </style>
 </head>
 <body>
+
 	<div class="wrapper">
 		<div class="content">
 
 			<header class="hero-section">
-				 <div class="nav container">
-            <i class="fas fa-bars" id="menu-icon"></i>
-            <a href="#" class="logo">FASH<span>ION</span>FORSIGHT</a>
-            <!-- navigation list -->
-            <ul class="navbar">
-                <li><a href="index.html" class="active">Home</a></li>
-                            
-                <li><a href="aboutus.html">About Us</a></li>
-                
-                
-                <li class="dropdown">
-                    <a href="#home">Products</a>
-                    <div class="dropdown-content">
-                        <a href="allbrands.html">ALL BRANDS</a>
-                        <a href="africanveil.html">AFRICAN VEIL</a>
-                    </div>
-                </li>
-                <li><a href="trends.html">Trends</a></li>
-                <li><a href="services.html">Services</a></li>   
-                <li><a href="blog.html">Blog</a></li>
-                
-                <li class="dropdown">
-                    <a href="#home">User Credentials</a>
-                    <div class="dropdown-content">
-                        <a href="signup.html">Sign Up</a>
-                        <a href="login.html">Login</a>
-                    </div>
-                </li>
-            </ul>
-					
-            <i class="fas fa-search" id="search-icon"></i>
-            <div class="search-box container">
-                <input type="search" name="" id="" placeholder="Search here...">
-            </div>
-        </div>
-        
-				
-
+				<img data-speed=".6" class="hero" src="img/hero.png" alt="Alt" >
+				<div class="container">
+					<div data-speed=".75" class="main-header">
+						<h1 class="main-title">creative scroll</h1>
+					</div>
+				</div>
 			</header>
 		
 			<div class="portfolio">
 				<div class="container">
-					<img data-speed=".6" class="hero" src="img/hero.png" alt="Alt" >
 					<main class="gallery">
 	
 						<div data-speed=".9" class="gallery__left">
@@ -147,6 +83,6 @@
 
 		</div>
 	</div>
-  
+
 </body>
 </html>
