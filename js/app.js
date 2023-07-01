@@ -1,32 +1,14 @@
-const searchIcon = document.getElementById("searchIcon");
-const searchBox = document.querySelector(".search-box");
+const nav = document.querySelector(".nav");
+let prevScrollPos = window.pageYOffset;
 
-searchIcon.addEventListener("click", () => {
-  document.body.classList.toggle("openSearch");
-  searchBox.classList.toggle("openSearch");
-});
-
-const nav = document.querySelector(".nav"),
-  searchIcon = document.querySelector(".search-icon"), // Updated class name
-  navOpenBtn = document.querySelector(".navOpenBtn"),
-  navCloseBtn = document.querySelector(".navCloseBtn");
-
-searchIcon.addEventListener("click", () => {
-  nav.classList.toggle("openSearch");
-  nav.classList.remove("openNav");
-  if (nav.classList.contains("openSearch")) {
-    return searchIcon.classList.replace("uil-search", "uil-times");
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    nav.style.top = "0";
+  } else {
+    nav.style.top = "-100px";
   }
-  searchIcon.classList.replace("uil-times", "uil-search");
-});
-
-navOpenBtn.addEventListener("click", () => {
-  nav.classList.add("openNav");
-  nav.classList.remove("openSearch");
-  searchIcon.classList.replace("uil-times", "uil-search");
-});
-navCloseBtn.addEventListener("click", () => {
-  nav.classList.remove("openNav");
+  prevScrollPos = currentScrollPos;
 });
 
 
