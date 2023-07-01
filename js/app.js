@@ -1,35 +1,3 @@
-const searchIcon = document.getElementById("searchIcon");
-const searchBox = document.querySelector(".search-box");
-
-searchIcon.addEventListener("click", () => {
-  document.body.classList.toggle("openSearch");
-  searchBox.classList.toggle("openSearch");
-});
-
-const nav = document.querySelector(".nav"),
-  searchIcon = document.querySelector(".search-icon"), // Updated class name
-  navOpenBtn = document.querySelector(".navOpenBtn"),
-  navCloseBtn = document.querySelector(".navCloseBtn");
-
-searchIcon.addEventListener("click", () => {
-  nav.classList.toggle("openSearch");
-  nav.classList.remove("openNav");
-  if (nav.classList.contains("openSearch")) {
-    return searchIcon.classList.replace("uil-search", "uil-times");
-  }
-  searchIcon.classList.replace("uil-times", "uil-search");
-});
-
-navOpenBtn.addEventListener("click", () => {
-  nav.classList.add("openNav");
-  nav.classList.remove("openSearch");
-  searchIcon.classList.replace("uil-times", "uil-search");
-});
-navCloseBtn.addEventListener("click", () => {
-  nav.classList.remove("openNav");
-});
-
-
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 if (ScrollTrigger.isTouch !== 1) {
@@ -80,8 +48,4 @@ if (ScrollTrigger.isTouch !== 1) {
 	})
 
 }
-// JavaScript code
-window.addEventListener("scroll", function() {
-  var nav = document.querySelector(".nav");
-  nav.classList.toggle("scrolled", window.scrollY > 0);
-});
+
