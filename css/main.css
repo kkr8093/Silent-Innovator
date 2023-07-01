@@ -81,6 +81,8 @@ a {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+  pointer-events: auto;
+  z-index: 2;
 }
 
 .nav .search-box {
@@ -93,22 +95,7 @@ a {
   pointer-events: none;
   transition: all 0.2s linear;
 }
-.nav.openSearch .search-box {
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 1; /* Add this line */
-}
 
-.search-box .search-icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 2; /* Add this line */
-}
 .nav .search-box .search-icon {
   color: #fff;
   font-size: 20px;
