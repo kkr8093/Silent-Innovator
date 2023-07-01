@@ -64,8 +64,8 @@ a {
   text-decoration: none;
 }
 
-.navbar a:hover,
-.navbar .active{
+.nav a:hover,
+.nav .active{
     color: var(#BFFFFE);
     border-bottom: 2px solid var(#BFFFFE);
 }
