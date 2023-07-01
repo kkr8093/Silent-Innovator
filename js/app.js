@@ -81,7 +81,16 @@ if (ScrollTrigger.isTouch !== 1) {
 
 }
 // JavaScript code
-window.addEventListener("scroll", function() {
-  var nav = document.querySelector(".nav");
-  nav.classList.toggle("scrolled", window.scrollY > 0);
-}); - is this in correct form
+const nav = document.querySelector(".nav");
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    nav.style.top = "0";
+  } else {
+    nav.style.top = "-100px";
+  }
+  prevScrollPos = currentScrollPos;
+});
+
