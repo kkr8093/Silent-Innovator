@@ -41,6 +41,11 @@ body {
   background: #333;
   color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s;
+}
+
+.nav.scrolled {
+  top: -100px;
 }
 
 .nav,
@@ -113,6 +118,9 @@ a {
 .nav .navCloseBtn {
   display: none;
 }
+
+/* responsive styles... */
+
 /* responsive */
 @media screen and (max-width: 1160px) {
   .nav {
