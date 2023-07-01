@@ -4,10 +4,24 @@
 	box-sizing: border-box;
 }
 :root {
+	 --main-color: #179207 ;
 	--index: calc(1vw + 1vh);
 	--color-header: #f4efec;
 	--color-text: #cdc6c3;
 	--gallery-gap: calc(var(--index) * 7.5)
+}
+/* scroll bar */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background: var(--main-color);
+}
+
+section{
+    padding: 4rem 0 0;
 }
 @font-face {
 	font-family: raleway-c;
