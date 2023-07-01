@@ -46,18 +46,18 @@ body {
 }
 #menu-icon{
     font-size: 25px;
-    color: var(--text-color);
+    color: #000000;
     cursor: pointer;
     display: none;
 }
 .logo{
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--other-color);
+    color: #777;
     font-family: 'Megrim', sans-serif;
 }
 .logo span{
-    color: var(--main-color);
+    color: blue;
 }
 .nav.scrolled {
   top: -100px;
@@ -73,12 +73,12 @@ body {
   justify-content: space-between;
 }
 
-.nav-links a {
+.nav-links .a {
   color: #fff;
   text-decoration: none;
 }
 
-.nav-links a:hover,
+.nav-links .a:hover,
 .nav-links .active{
     color: #BFFFFE;
     border-bottom: 2px solid var(#BFFFFE);
