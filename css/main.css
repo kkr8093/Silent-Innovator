@@ -44,7 +44,21 @@ body {
   transition: top 0.3s;
  z-index: 2;
 }
-
+#menu-icon{
+    font-size: 25px;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--other-color);
+    font-family: 'Megrim', sans-serif;
+}
+.logo span{
+    color: var(--main-color);
+}
 .nav.scrolled {
   top: -100px;
 }
@@ -59,7 +73,7 @@ body {
   justify-content: space-between;
 }
 
-a {
+.nav a {
   color: #fff;
   text-decoration: none;
 }
